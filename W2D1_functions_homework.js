@@ -9,3 +9,17 @@ const maxOfThree=(num1,num2,num3)=>{
     }
 }
 console.log(maxOfThree(1,4,3))
+
+
+//3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+ 
+function isCharAVowel(char){
+    char=char.toLowerCase()
+ if (char === 'a'||char === 'e' || char === 'o' || char === 'u'||char === 'y'){
+    return true
+ }else{
+    return false
+ }
+}
+
+console.log(isCharAVowel('Y'));

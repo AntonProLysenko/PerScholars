@@ -23,3 +23,16 @@ function isCharAVowel(char){
 }
 
 console.log(isCharAVowel('Y'));
+
+
+//4.Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
+
+const sumArray=(...array)=>{
+    sum = 0
+    for(i=0; i<array.length; i++){
+     sum += array[i]++
+     
+    }console.log(sum)
+}
+
+(sumArray(10,20,30));

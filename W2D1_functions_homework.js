@@ -27,12 +27,45 @@ console.log(isCharAVowel('Y'));
 
 //4.Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
 
-const sumArray=(...array)=>{
+const sumArray=(array)=>{
     sum = 0
     for(i=0; i<array.length; i++){
      sum += array[i]++
      
-    }console.log(sum)
+    }
+    return sum
 }
 
-(sumArray(10,20,30));
+console.log((sumArray([10,20,30])));
+
+
+
+
+//5.Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product of those numbers. For example, multiplyArray([2, 4, 5]);would return 40.
+
+
+ function multiplyArray (arrayElem){
+    prod=0
+    
+    for(i=0; i<arrayElem.length; i++){
+        prod = arrayElem[i]*arrayElem[i]
+        
+       }
+       return prod  
+ }
+
+ console.log((multiplyArray([2,2,2])));
+
+
+ //6.Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
+
+ const numArgs =(...arggs)=>{
+    var length=0
+    for(i=0;i<arggs.length; i++){
+        length++
+    }
+    return length
+
+
+ }
+ console.log(numArgs(1,2,3,4,5,66,7,834,534,2))

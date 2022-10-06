@@ -98,6 +98,70 @@ console.log((sumArray([10,20,30])));
 
  
 
-longestStringInArray(['arr', "sdfs", 'sadsdfsdff', 'sdfe','dgdsfgdsfg','dsfgdsfgwesdfdfbvgve refedssfewd','sdfe'])
+longestStringInArray(['I', "am", 'the', 'shortest','word in','the whole','array'])
+
+
+
+
+//9Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments,
+// and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);would return ["hello", "morning"].
+
+
+
+
+
+
+
+
+
+
+
+const elem =['I', "am", 'the', 'shortest','word in','the whole','array']
+
+const elemLength=[]
+
+
+for(i=0;i<elem.length; i++){
+
+       elemLength.push(elem[i].length)
+
+}  
+
+console.log(elemLength);
+
+for(i=0;i<elem.length; i++){
+    if(elem[i]>elem[i--]){
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// function stringsLongerThan (elem){
+//     const elemLength=[]
+
+//     const arrayOfLongest=[]
+
+
+// for(i=0;i<elem.length; i++){
+
+//     console.log(elem[i].length)
+    
+// }
+
+// console.log(elemLength);
+
+// stringsLongerThan(['I', "am", 'the', 'shortest','word in','the whole','array'])
+// }
+
+
 
  

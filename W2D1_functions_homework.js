@@ -15,14 +15,39 @@ console.log(maxOfThree(1, 4, 3))
 
 function isCharAVowel(char) {
     char = char.toLowerCase()
-    if (char === 'a' || char === 'e' || char === 'o' || char === 'u' || char === 'y') {
-        return true
-    } else {
-        return false
+    
+ 
+    switch (char) {
+
+          case 'a':
+            return true;
+            break;
+          case 'e':
+            return true;
+            break;
+          case 'o':
+            return true;
+            break;
+        case 'u':
+            return true;
+            break;
+          case 'y':
+            return true;
+            break;
+          default:
+           return false;
+            break;
     }
+
+    // if (char === 'a' || char === 'e' || char === 'o' || char === 'u' || char === 'y') {
+    //     return true
+    // } else {
+    //     return false
+    // }
+    
 }
 
-console.log(isCharAVowel('Y'));
+console.log(isCharAVowel('B'));
 
 
 //4.Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
@@ -45,10 +70,10 @@ console.log((sumArray([10, 20, 30])));
 
 
 function multiplyArray(arrayElem) {
-    prod = 0
+    prod = 1
 
     for (i = 0; i < arrayElem.length; i++) {
-        prod = arrayElem[i] * arrayElem[i]
+        prod *= arrayElem[i] 
 
     }
     return prod
@@ -109,56 +134,21 @@ longestStringInArray(['I', "am", 'the', 'shortest', 'word in', 'the whole', 'arr
 
 
 
-
-
-
-
-
-
-
-// const elem =['I', "am", 'the', 'shortest','word in','the whole','array']
-
-// const elemLength=[]
-
-
-// for(i=0;i<elem.length; i++){
-
-//        elemLength.push(elem[i].length)
-
-// }  
-
-// console.log(elemLength);
-
-// for(i=0;i<elem.length; i++){
-//     if(elem[i]>elem[i--]){
-
-
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-function stringsLongerThan(elem) {
+function stringsLongerThan(elem, compNum) {
   
-    let elemLongest = ''
+    const elemLongest = []
 
-    for (i = 0; i < elem.length; i++) {
+    elem.forEach(function(elemIndex){
 
-        if (elem[i].length > elemLongest.length) {
-            elemLongest=elem[i]
+        if (elemIndex.length > compNum) {
+            elemLongest.push(elemIndex)
 
         } 
-    }console.log(elemLongest);
+    })
+    console.log(elemLongest);
 }    
 
 
-    stringsLongerThan(['I', "am", 'the', 'shortest', 'word in', 'the whole', 'array'])
+    stringsLongerThan(['I', "am", 'the', 'shortest', 'word in', 'the whole', 'array'], 8)
 
 

@@ -79,3 +79,25 @@ console.log((sumArray([10,20,30])));
      .join("")
  }
  console.log(reverseString('All'))
+
+ //8 Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
+ const longestStringInArray=(stringArr)=>{
+    var longestWord=""
+   
+    for(i=0;i<stringArr.length; i++){
+        
+
+        if(stringArr[i].length>longestWord.length){
+            longestWord=stringArr[i]
+        }
+        
+    }console.log(longestWord)
+
+
+ }
+
+ 
+
+longestStringInArray(['arr', "sdfs", 'sadsdfsdff', 'sdfe','dgdsfgdsfg','dsfgdsfgwesdfdfbvgve refedssfewd','sdfe'])
+
+ 

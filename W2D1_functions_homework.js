@@ -69,3 +69,13 @@ console.log((sumArray([10,20,30])));
 
  }
  console.log(numArgs(1,2,3,4,5,66,7,834,534,2))
+
+
+ //7Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar');would return the string "ratskcor".
+
+ function reverseString (word){
+     return word.split("")
+     .reverse()
+     .join("")
+ }
+ console.log(reverseString('All'))

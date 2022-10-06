@@ -40,7 +40,7 @@ class Cat {
             
         }else if (this.hungry===false ){
             
-            console.log("Im not hungry");
+            console.log("I'm not hungry");
             
         }else{
             this.runAround()
@@ -63,4 +63,103 @@ let coco = new Cat('Coco','white', 'long',4,true)
 console.log(coco);
 coco.catchTheMouse()
 coco.runAround()
+
+
+
+
+
+
+//
+// create 3 properties that are set by the constructor
+// create 3 methods
+// instantiate 2 arraysof 3 pirates, name the arrays after your favorite pirate ships, jollyRoger and blackPearl
+// loop over each array and print 3 properties of each pirate
+
+
+
+
+class Pirate {
+
+      constructor(name, eyes,curse){
+        this.name= name;
+        this.eyes= eyes;
+        this.curse = curse || false
+    
+      }
+      drinkRome(){
+        console.log("gulp gulp gulp Burp!")
+      }
+      fight(){
+        
+        console.log('Bang Bang');
+        
+      }land(){
+        if( this.curse === true ){
+
+            return console.log("You cannot step your foot on the land another 55 years Yo-ho-ho!");
+            
+        }else {
+            return console.log("Landed successfuly!")
+        }
+      }
+    
+}
+
+const theBlackPearl=[]
+const theFlyingDutchman=[]
+
+
+
+
+
+let davyJones = new Pirate("Davy Jones", 2, true);
+let bill =new Pirate("Bootstrap Bill", 2,true)
+let sharkHead= new Pirate("Shark Head", 2, true)
+theFlyingDutchman.push(davyJones,bill,sharkHead)
+
+// console.log(theFlyingDutchman);
+
+
+ 
+let willTurner = new Pirate("Will Turner", 2);
+let jackSparrow = new Pirate("Jack Sparrow",2)
+let barbarossa = new Pirate("Barbarossa",2)
+ theBlackPearl.push(willTurner,jackSparrow,barbarossa)
+//  console.log(theBlackPearl);
+
+//  for(i=0; i<theBlackPearl.length; i++){
+//     console.log(theBlackPearl[i].name)
+//     console.log(theBlackPearl[i].eyes)
+//     console.log(theBlackPearl[i].curse)
+//  }
+
+
+//  for(i=0; i<theFlyingDutchman.length; i++){
+//     console.log(theFlyingDutchman[i].name)
+//     console.log(theFlyingDutchman[i].eyes)
+//     console.log(theFlyingDutchman[i].curse)
+//  }
+
+
+
+
+
+ //BELOW I ADDED SOME ACTION FROM PIRATES
+
+ for(i=0; i<theFlyingDutchman.length; i++){
+    console.log(theFlyingDutchman[i].drinkRome())
+    console.log(theFlyingDutchman[i].fight())
+    console.log(theFlyingDutchman[i].land())
+ }
+
+
+
+
+
+
+
+    
+
+
+
 

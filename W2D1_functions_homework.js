@@ -84,14 +84,22 @@ console.log((multiplyArray([2, 2, 2])));
 
 //6.Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
 
+// const numArgs = (...arggs) => {
+//     var length = 0
+//     for (i = 0; i < arggs.length; i++) {
+//         length++
+//     }
+//     return length
+
+
+//}
+
+
+
+
 const numArgs = (...arggs) => {
-    var length = 0
-    for (i = 0; i < arggs.length; i++) {
-        length++
-    }
-    return length
-
-
+    
+    return arggs.length
 }
 console.log(numArgs(1, 2, 3, 4, 5, 66, 7, 834, 534, 2))
 

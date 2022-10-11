@@ -157,9 +157,9 @@ class CheckingAccount extends BankAccount{
         
     }
     withdraw(bills){
-        let overdraftEnabled=true
-        if(overdraftEnabled===true){ 
-            let newDeposit =this.balance-bills
+        let overdraftEnabled = true
+        if(overdraftEnabled === true){ 
+            let newDeposit = this.balance - bills
             this.balance=newDeposit
         }else{
             if(bills>this.balance){
@@ -178,12 +178,12 @@ class CheckingAccount extends BankAccount{
 
 
 
-// const bofaCheck= new CheckingAccount('Anton', 10, 1234567890)
+ const bofaCheck= new CheckingAccount('Anton', 10, 1234567890)
 
 
-// console.log(bofaCheck);
-// bofaCheck.withdraw(20)
-// console.log(bofaCheck);
+ console.log(bofaCheck);
+ bofaCheck.withdraw(20)
+ console.log(bofaCheck);
 
 
 
@@ -205,12 +205,12 @@ class SavingsAccount extends BankAccount{
 }
 
 
-// const bofaSave= new SavingsAccount('Anton', 300, 1234567890)
+ const bofaSave= new SavingsAccount('Anton', 300, 1234567890)
 
 
 // console.log(bofaSave);
-// bofaSave.withdraw(20)
-// console.log(bofaSave);
+//  bofaSave.withdraw(20)
+ //console.log(bofaSave); 
 
 
 

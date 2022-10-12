@@ -1,7 +1,9 @@
 class Hamster{
-   
+    constructor(name){
+        this.name=name
+
+    }
         owner=""
-        name="Russel"
         price=15
     
 
@@ -69,25 +71,72 @@ ageUp(){
     this.mood--
     this.bankAccount+=10
 }
-buyHamster(){
-    this.hamster.push(hamster={})
+buyHamster(newHamster){
+    this.hamster.push(newHamster)
     this.mood+=10
-    this.bankAccount-=getPrice()
+    this.bankAccount-=newHamster.getPrice()
+}
+}
+
+//                                          1.Instantiate a new Person named Timmy
+const timmy = new Person("Timmy")
+//                                              2. Age Timmy five years
+timmy.age=5
+
+
+//                                              3.At this point Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times.
+for(i=0; i<5;i++){
+timmy.eat()                 //here Timmy eats 5 times in a raw 
+}
+
+//                                              4.Now Timmy's a little heavier than he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times
+for(i=0; i<5;i++){
+    timmy.exersise()                 //here Timmy exersises 5 times in a raw 
+    }
+
+
+//                                                  5.Age Timmy 9 years
+
+for(i=0; i<4;i++){
+    timmy.ageUp()                 //here Timmy is growing until he is 9
+    }
+
+
+
+
+//                                                  6.Create a hamster named "Gus"
+const gusTheHumster= new Hamster("Gus")
+
+//                                                  7.Set Gus's owner to the string "Timmy"
+gusTheHumster.owner=timmy.name
+
+
+
+//                                              8.Have Timmy "buy" Gus
+
+timmy.buyHamster(gusTheHumster)
+
+
+
+
+
+//                                              9.Age Timmy 15 years
+
+for(i=0; i<15;i++){
+timmy.ageUp()
 }
 
 
+//                                                      10.Have Timmy eat twice
+
+timmy.eat()
+timmy.eat()
+//                                                          11.Have Timmy exercise twice
+timmy.exersise()
+timmy.exersise()
+
+console.log(gusTheHumster);
+
+console.log(timmy);
 
 
-
-}
-
-
-
-
-
-
-
-const anton = new Person("Anton")
-
-
-console.log(anton);

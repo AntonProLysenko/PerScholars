@@ -140,3 +140,47 @@ console.log(gusTheHumster);
 console.log(timmy);
 
 
+
+
+
+
+
+
+
+
+//                                                          Chef Make Dinners
+
+
+
+//Please give a responce!
+//I'm not sure if we have to be abble to acces our dinners in global scope
+
+
+class Dinner {
+    constructor(appetizer,entree, dessert){
+        this.appetizer=appetizer,
+        this.entree=entree;
+        this.dessert=dessert
+    }
+
+}
+
+class Chef {
+    makeDiner(appetizer,entree,dessert){
+         const dinner = new Dinner(appetizer,entree,dessert)
+        return dinner
+    }
+
+}
+
+
+const frank = new Chef;
+
+
+
+console.log(frank.makeDiner('onion rings', 'mac&cheese', 'cheesecake'))
+
+
+console.log(frank.makeDiner('Deviled Eggs', 'salmon', 'lava fudge'))
+
+console.log(frank.makeDiner('calamari', 'salmon', 'mafin'))

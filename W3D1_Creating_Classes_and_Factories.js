@@ -183,4 +183,4 @@ console.log(frank.makeDiner('onion rings', 'mac&cheese', 'cheesecake'))
 
 console.log(frank.makeDiner('Deviled Eggs', 'salmon', 'lava fudge'))
 
-console.log(frank.makeDiner('calamari', 'salmon', 'mafin'))
+console.log(frank.makeDiner('calamari', 'salmon', 'mufin'))

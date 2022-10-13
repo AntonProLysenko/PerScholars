@@ -13,9 +13,9 @@ for(let i = 0; i<20; i++){
 // Get Even
 ////////////////////////////////
 
-for (let i = 0; i<200; i+=2){
+for (let j = 0; j<200; j+=2){
 
-    console.log(i);
+    console.log(j);
     
 }
 
@@ -27,6 +27,24 @@ for (let i = 0; i<200; i+=2){
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
+for(let m =0; m<=100; m++){
+    if(m%3===0 && m%5===0){
+
+        console.log('FizzBuzz');
+        
+    }else if (m%5===0){
+        
+        console.log('Buzz');
+        
+    }else if(m%3===0){
+        console.log('Fizz');
+    }
+    
+    console.log(m);
+    
+
+
+}
 
 
 ////////////////////////////////

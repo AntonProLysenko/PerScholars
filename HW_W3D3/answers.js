@@ -71,6 +71,58 @@ for (let i of ninjaTurtles){
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 
+'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 
+'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 
+'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+
+console.log(favMovies.indexOf("Titanic"));
+//1
+favMovies.sort()// sorting array alphabeticaly
+console.log(favMovies);
+//2
+favMovies.pop()
+console.log(favMovies);
+//3
+favMovies.push("Guardians of the Galaxy")
+console.log(favMovies);
+//4
+favMovies.reverse()
+console.log(favMovies);
+//5
+favMovies.shift()
+console.log(favMovies);
+
+//6
+//unshift adds the element to the array
+favMovies.unshift('from Dusk Till Down')
+//7
+favMovies.splice(favMovies.indexOf('Django Unchained'), 0, "Avatar")
+console.log(favMovies);
+//8
+
+let arrayMid = favMovies.length/2 // found the middle of the array
+
+console.log(arrayMid);
+
+let anotherFavMovies=favMovies.slice(arrayMid)
+
+console.log(anotherFavMovies);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ////////////////////////////////

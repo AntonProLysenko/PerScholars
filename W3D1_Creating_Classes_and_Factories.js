@@ -153,7 +153,10 @@ console.log(timmy);
 
 
 //Please give a responce!
-//I'm not sure if we have to be abble to acces our dinners in global scope
+
+//I'm not sure if we have to be abble to acces our dinners in global scope, 
+//since there is no instruction that we have to push our dinners in some array or assign 
+//them  to the variable
 
 
 class Dinner {
@@ -166,6 +169,7 @@ class Dinner {
 }
 
 class Chef {
+
     makeDiner(appetizer,entree,dessert){
          const dinner = new Dinner(appetizer,entree,dessert)
         return dinner
@@ -176,10 +180,7 @@ class Chef {
 
 const frank = new Chef;
 
-
-
 console.log(frank.makeDiner('onion rings', 'mac&cheese', 'cheesecake'))
-
 
 console.log(frank.makeDiner('Deviled Eggs', 'salmon', 'lava fudge'))
 

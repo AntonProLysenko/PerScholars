@@ -104,35 +104,52 @@ console.log(favMovies);
 
 let arrayMid = favMovies.length/2 // found the middle of the array
 
-console.log(arrayMid);
+//9
+let anotherFavMovies=favMovies.slice(arrayMid)//created a new array sliced from existed
 
-let anotherFavMovies=favMovies.slice(arrayMid)
-
+//10
 console.log(anotherFavMovies);
 
-
-
-
-
-
-
-
-
-
-
-
-
+//11
+//unfortunately the "Fast and Furious exists in both arrays"
+//but we'll get -1 if we are looking for a not existing element
 
 
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+   
+                    
+whereIsWaldo.splice(1,1)
 
+console.log(whereIsWaldo);
+
+whereIsWaldo[1][2]="No one"
+console.log(whereIsWaldo);
+
+console.log(whereIsWaldo[2][1][whereIsWaldo[2][1].indexOf('Waldo')]);
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+const talks =["...human...why you taking pictures of me?...",
+             "...the catnip made me do it...", 
+             "...why does the red dot always get away..." ]
+
+
+for(let d=0; d<20;d++){
+    
+    console.log("Love me, pet me! HSSSSSS!");
+    for(let d=0;d<2;d+=2){
+        console.log(talks[Math.floor(Math.random()*3)]);
+
+    }
+    
+}
 
 
 ////////////////////////////////

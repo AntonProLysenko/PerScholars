@@ -60,7 +60,13 @@ wolfy.unshift( "Gameboy")
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 
+for (let i of ninjaTurtles){
+
+    console.log(i.toUpperCase());
+    
+}
 
 ////////////////////////////////
 // Methods, Revisited

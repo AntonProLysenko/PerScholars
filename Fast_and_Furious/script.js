@@ -130,7 +130,7 @@ console.log(posts);
 
 
 //                                                                            My solution 
-//(I think in this case out event looks cleaner)
+//(I think in this case out eventListeners looks cleaner)
 // and doesn't add a class to child elements
 
 function setRed(evt){

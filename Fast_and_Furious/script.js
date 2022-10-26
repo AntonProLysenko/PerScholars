@@ -105,48 +105,36 @@ console.log(posts);
 
 //                                    Solution recomended by instructions
 
-// function setRed(evt){
-//     evt.target.classList.toggle('red')
-// }
-
-
-// function setPurple(evt){
-//   evt.target.classList.toggle('purple')
-// }
-
-
-
 // posts.forEach((post)=>{
-//    post.addEventListener('mouseout', setPurple)
-//    post.addEventListener('mouseenter', setRed)
-
-//   //I think with adding 2 bottom lines our boxes change color more correctly
-
-//   post.addEventListener('mouseout', setRed)
-//   post.addEventListener('mouseenter', setPurple)
+ 
+//    post.addEventListener('mouseenter', function (){
+//    post.classList.toggle('red')
+// })
+//   post.addEventListener('mouseout', function (){
+//   post.classList.toggle('red')
+// })
 // })
 
 
 
-
 //                                                                            My solution 
-//(I think in this case out eventListeners looks cleaner)
-// and doesn't add a class to child elements
-
-function setRed(evt){
-  evt.target.classList.replace('purple', 'red')
-}
-
-function setPurple(evt){
-evt.target.classList.replace('red', 'purple')
-}
-
-
-
+//(I think in this case our blog-posts hover works more correct
 
 posts.forEach((post)=>{
- post.addEventListener('mouseout', setPurple)
- post.addEventListener('mouseenter', setRed)
-})
+  post.addEventListener('mouseover', function (){
+   post.classList.add('red')
+   })
+ 
+  post.addEventListener('mouseout', function (){
+   post.classList.replace('red', 'purple')
+ })
+ })
+
+
+
+
+
+
+
 
 

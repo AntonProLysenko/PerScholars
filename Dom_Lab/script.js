@@ -100,7 +100,7 @@ let showingSubMenu = true;
 topMenuEl.addEventListener("click", (evt)=>{
   
     evt.preventDefault()
-    let linkObj
+   
    if(evt.target.tagName !== 'A'){
        return
    }else{
@@ -127,17 +127,18 @@ topMenuEl.addEventListener("click", (evt)=>{
 
 
     //5.6
+    let linkObj
     for (let i=0;i<menuLinks.length; i++){
-      if(evt.target.textContent === menuLinks[i].text){
-         linkObj= menuLinks[i]
-        showingSubMenu = menuLinks[i].hasOwnProperty('subLinks')
+      if(evt.target.textContent === menuLinks[i].text){//here we are checking if we clicked on the element that are maching with our objects from the array
+         linkObj= menuLinks[i]      //grabing the object (from the array) on which we clicked
+        showingSubMenu = menuLinks[i].hasOwnProperty('subLinks')//here we can simply put true(made it like this to be more fancy) setting it to true here (we'll use it in 5.7)
       } 
       }
       
 
 
     //5.7
-    if (showingSubMenu === true){
+    if (showingSubMenu){//if showingSubMenu === true(for false we can use !showingSubMenu) 
          buildSubMenu(evt.target)
         subMenuEl.style.top='100%'
 

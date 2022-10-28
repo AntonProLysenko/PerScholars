@@ -169,7 +169,8 @@ class CheckingAccount extends BankAccount{
             }else{
             let newBalance = this.balance-bills
     
-            this.balance=newBalance}
+            this.balance=newBalance
+            }
         }
     }
     

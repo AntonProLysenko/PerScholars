@@ -1,0 +1,8 @@
+<head>
+<title>Second template</title>
+</head>
+<body>
+#header#
+<header>#message#</header>
+#link#
+</body>

@@ -1,0 +1,9 @@
+<head>
+<title> First Template </title>
+</head>
+<body>
+#header#
+#message#
+#link#
+
+</body>

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "express-react-view": "^1.1.7"
+    "express-react-view": "^1.1.7",
+    "express-react-views": "^0.11.0"
   }
 }

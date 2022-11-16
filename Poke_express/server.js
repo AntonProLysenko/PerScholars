@@ -17,7 +17,7 @@ app.get('/pokemons', (req,res)=>{
 })
 
 app.get('/pokemons/:id', (req,res)=>{
-    res.send(req.params.id)
+    res.render('Show', pokemons[req.params.id])
 })
 
 app.listen(PORT, ()=>{

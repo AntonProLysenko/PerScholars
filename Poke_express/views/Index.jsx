@@ -19,12 +19,13 @@ class Index extends React.Component{
                             pokemons.map((pok, index)=>{
                                 return(                                    
                                     <li key = {index} > 
-                                        <a style = {myStyle}href = {'/pokemons/'+index}>{pok.name.charAt(0).toUpperCase() + pok.name.slice(1) }</a> 
+                                        <a style = {myStyle}href = {'/pokemons/'+pok._id}>{pok.name.charAt(0).toUpperCase() + pok.name.slice(1) }</a> 
                                      </li>
                                 )
                             })
                         }
                     </ul>
+                    <a href="/pokemons/new">Catch Another Pokemon</a>
             </body>
         )
 

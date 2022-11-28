@@ -16,7 +16,7 @@ class New extends React.Component{
             </form>
             </>
         )
-    }
+    } 
        
 }
 

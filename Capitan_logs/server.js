@@ -1,9 +1,12 @@
 require('dotenv').config()
-let express = require('express')
+
+const express = require('express')
+const mongoose = require('mongoose')
+const methodOverride = require('method-override')
+
 const app = express()
 const reactViews = require('express-react-views')
 const PORT = 3000
-const mongoose = require('mongoose')
 const Log = require('./models/logs')
 
 
@@ -21,12 +24,15 @@ mongoose.connection.once("open",()=>{
 app.set('view engine', 'jsx')
 app.engine('jsx', reactViews.createEngine())
 
+
 //MIDDLEWARE
 app.use((req,res,next)=>{//uses only for middleware
     next()
   })
   
-  app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended: false}))
+app.use(methodOverride('_method'))
+
 
 
 
@@ -48,6 +54,19 @@ app.get('/',(req,res)=>{
 //NEW
 app.get('/new', (req,res)=>{
     res.render('New')    
+})
+
+
+//DELETE
+app.delete("/:id",(req,res)=>{
+    Log.findByIdAndDelete(req.params.id,(err,data)=>{
+        if(err){
+            res.send(err)
+        }else{
+
+            res.redirect("/")
+        }
+    })
 })
 
 
@@ -73,11 +92,11 @@ app.get("/:id", (req, res) => {
         Log.findById(req.params.id,(error,foundLog)=>{
           if(error){
             res .status(400).send(error)
-        }else{
-          res.status(200).render('Show',{
-            log:foundLog
-          })
-        }
+         }else{
+              res.status(200).render('Show',{
+              log:foundLog
+             })
+         }
         // res.render('Show',  Fruit[req.params.id] )  //.render automaticaly looks to views folder looking for the engine(Show) 
       })
     })

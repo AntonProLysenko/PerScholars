@@ -1,8 +1,8 @@
-const react = require ('react')
+const React = require ('react')
 
 class Show extends React.Component{
     render(){
-        const {title, entry, shipIsBroken } = this.props.logs
+        const {title, entry, shipIsBroken } = this.props.log
         return(
             <>
             <h1>{title}</h1>

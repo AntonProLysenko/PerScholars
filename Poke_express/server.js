@@ -70,8 +70,9 @@ app.get('/pokemons/:id', (req,res)=>{
     })
 })
 
-app.post('/pokemons',(req,res)=>{
 
+app.post('/pokemons',(req,res)=>{
+    console.log(req.body)
    req.body.img = 'http://img.pokemondb.net/artwork/'+ req.body.name.toLowerCase()
 
     Pokemon.create(req.body,(error, createdPokemon)=>{

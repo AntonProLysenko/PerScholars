@@ -63,7 +63,6 @@ app.delete("/:id",(req,res)=>{
         if(err){
             res.send(err)
         }else{
-
             res.redirect("/")
         }
     })
@@ -87,6 +86,14 @@ app.post('/',(req,res)=>{
     })
 })
 
+//EDIT
+app.get('/:id/edit',(req,res)=>{
+    Log.findById(req.params.id,(err,foundLog)=>{
+        res.render('Edit', {log:foundLog})
+    })
+})
+
+
 //SHOW
 app.get("/:id", (req, res) => {
         Log.findById(req.params.id,(error,foundLog)=>{
@@ -96,8 +103,8 @@ app.get("/:id", (req, res) => {
               res.status(200).render('Show',{
               log:foundLog
              })
-         }
-        // res.render('Show',  Fruit[req.params.id] )  //.render automaticaly looks to views folder looking for the engine(Show) 
+             console.log(foundLog.updatedAt)
+         } 
       })
     })
 

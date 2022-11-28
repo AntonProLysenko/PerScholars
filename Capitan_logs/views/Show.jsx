@@ -10,6 +10,8 @@ class Show extends React.Component{
             Last Update:{this.props.log.createdAt.toString()}
             <p>{entry}</p>
             <a href={`/${this.props.log._id}/edit`}>Edit</a>
+            <br />
+            <a href="/">Go to main page</a>
             </>
         )
     }

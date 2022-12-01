@@ -19,7 +19,7 @@ class Index extends React.Component{
                         <li key = {i}>
                             <h4><a href={`/${log._id}`}>{log.title.toUpperCase()}</a></h4>
                             {
-                            log.shipIsBroken?'Repairs in progress':"Afloat"
+                            log.shipIsBroken? <p>'Repairs in progress'</p>:<p>"Afloat"</p>
                             }
                         </li>
                     )

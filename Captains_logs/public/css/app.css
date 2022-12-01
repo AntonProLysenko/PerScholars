@@ -1,10 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Press+Start+2P&display=swap');
 
 body {
-  background: url(http://shturman-tof.ru/Bibl/Bibl_1/Image_9/29_karta6.jpg);
+  background-image: url(https://abrakadabra.fun/uploads/posts/2022-01/1642932156_6-abrakadabra-fun-p-staraya-morskaya-karta-10.jpg);
+  background-size: cover;
   margin: 0;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Cormorant Infant', serif;
+  text-align: center;
+ 
 }
+
 
 h1 {
   font-family: 'Righteous', cursive;
@@ -15,12 +19,24 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-family: 'Righteous', cursive;
+
+  margin:0;
+  margin-bottom: .5em;
+  padding: 1em;
+  text-align: center;
+}
+p{
+  font-style: bold;
+}
+
 a {
   color: orange;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
   font-size: 1.5em;
-  background: rgba(193, 235, 187, .9);
+
 }
 
 a:hover {
@@ -45,9 +61,7 @@ input[type=submit] {
   background: mediumseagreen;
   font-size: 1em;
   border-radius: 10%;
-} */
-
-body{
-  background-color: red;
+  font-family: 'Cormorant Infant', serif;
 }
+
 

@@ -33,6 +33,7 @@ app.use((req,res,next)=>{//uses only for middleware
   
 app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'))
+app.use(express.static('public'));
 
 //ROUTES
 app.use('/food', foodLogController)

@@ -17,6 +17,7 @@ router.get('/',(req,res)=>{
     })
 })
 
+
 //NEW
 router.get('/new', (req,res)=>{
     res.render('New')    
@@ -86,7 +87,8 @@ router.get("/:id", (req, res) => {
               res.status(200).render('Show',{
               log:foundLog
              })
-             console.log(foundLog.updatedAt)
+              
+            
          } 
       })
     })

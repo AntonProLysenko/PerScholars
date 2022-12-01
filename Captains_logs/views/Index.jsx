@@ -1,11 +1,15 @@
 const React = require('react')
+const DefaultLayout = require("./layout/Default")
 
 class Index extends React.Component{
     render(){
+
         const { logs } = this.props
         return(
-            <>
-            <h1>Capitan's Logs</h1>
+            <DefaultLayout title="Capitan's Logs">
+            
+          
+            <a href="/food">Food Logs</a> <br />
             <a href="/new">Create Log</a>
 
             <ol>
@@ -15,13 +19,8 @@ class Index extends React.Component{
                         <li key = {i}>
                             <h4><a href={`/${log._id}`}>{log.title.toUpperCase()}</a></h4>
                             {
-                            log.shipIsBroken?'BROKEN':"AFLOAT"
+                            log.shipIsBroken?'Repairs in progress':"Afloat"
                             }
-                            <br/>
-                            <form action={`/${log._id}?_method=DELETE`} method = 'POST'>
-                                <input type="submit" value = "Delete" />
-                            </form>
-                            
                         </li>
                     )
                     
@@ -30,7 +29,7 @@ class Index extends React.Component{
                 }
                 
             </ol>
-            </>
+            </DefaultLayout>
         )
             
     }

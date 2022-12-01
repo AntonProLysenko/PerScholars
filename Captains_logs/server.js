@@ -7,8 +7,8 @@ const methodOverride = require('method-override')
 const app = express()
 const reactViews = require('express-react-views')
 const PORT = 3000
-const Log = require('./models/logs')
 const logController = require('./controllers/logs')
+const foodLogController = require('./controllers/foodlogs')
 
 
 
@@ -35,6 +35,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'))
 
 //ROUTES
+app.use('/food', foodLogController)
 app.use('/',logController)
 
 

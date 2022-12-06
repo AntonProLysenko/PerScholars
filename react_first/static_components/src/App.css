@@ -7,24 +7,30 @@
 
 body{
 		width: 100vw;
-		height: 60vh;
+		height: 100vh;
 		text-align: center;
-    background-color: rgb(247 246 246);
     position: relative;
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+
+    background-image: linear-gradient(to bottom right, rgb(116 107 137), rgb(62 61 84));
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
     
 }
 
-
+div{
+  border-radius: 8px;
+}
 .container{
+  background-color: rgb(62 61 84);
+  padding:15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  height: 70%;
-  width:95%;
-
+  width:50%;
   display: grid ;
   column-gap:20px;
   row-gap:25px;
@@ -34,7 +40,7 @@ body{
 }
 
 .box{
-  background-color: rgb(221 221 221);
+  background-color: rgb(39 46 58);
   padding:10px;
 }
 .analysis{
@@ -59,6 +65,7 @@ body{
 }
 
 .sidebar{
+  background-color: rgb(62 61 84);
   grid-area:sidebar;
   display:flex;
   flex-direction: column;

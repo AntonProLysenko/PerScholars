@@ -1,5 +1,35 @@
 .App {
   text-align: center;
+  height: 80vh;
+  width:60vw;
+
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-family: 'Unbounded', cursive;
+  color:beige;
+
+  overflow: scroll;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-image: radial-gradient( circle 313px at 9.4% 28.4%,  rgba(70,150,173,1) 0%, rgba(47,62,121,1) 90% );
+}
+
+.App::-webkit-scrollbar {
+  width: 0.5em;
+ 
+}
+ 
+.App::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.App::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 247, 247);
+  /* outline: 1px solid slategrey; */
+  border-radius: 10px;
 }
 
 .App-logo {
@@ -35,4 +65,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button{
+    margin:5px;
+    border:none;
+    border-radius: 5px;
+    width: 30%;
+    height: 8%;
+
+    font-family: 'Unbounded', cursive;
+    color:whitesmoke;
+    background-color: rgb(58, 109, 118);
+    
+}
+
+.question{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
+}
+
+
+.title{
+  color:yellow;
+}
+
+.singleGame{
+  margin-top: 30%;
+}
+
+.increase{
+  background-color: greenyellow;
+  color:#54575e
+  
+}
+.decrease{
+  background-color: rgb(238, 112, 112);
+}
+.reset{
+  background-color:yellow;
+  color:#324161
 }

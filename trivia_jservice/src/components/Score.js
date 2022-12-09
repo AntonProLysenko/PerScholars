@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 
+
+
 export default function Score ({value}){
-    console.log(value)
+    // console.log(value)
     const [score,setScore] = useState(0)
 
     const handleIncrement=()=>{
@@ -20,9 +22,9 @@ export default function Score ({value}){
     return(
         <>
         <h1>Score:{score}</h1>
-        <button onClick = {handleDecrement}>Decrease</button>
-        <button onClick={handleIncrement}>Increase</button>
-        <button onClick={handleReset}>Reset</button>
+        <button className="decrease" onClick = {handleDecrement}>Decrease</button>
+        <button className="increase" onClick={handleIncrement}>Increase</button>
+        <button className="reset" onClick={handleReset}>Reset</button>
         <br/>
         </>
     )

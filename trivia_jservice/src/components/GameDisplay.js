@@ -28,7 +28,7 @@ export default function GameDisplay ({question}){
         <>
             {question&&
             
-                    <div>  
+                    <div className = "singleGame">  
                         <Score value = {question[0].value}/>
                         <p><span className='title'>Question:</span> {question[0].question}</p>
                         <p><span className='title'>Category:</span> {question[0].category.title}</p>

@@ -31,12 +31,14 @@ function App() {
 
   return (
     <div className="App">
-      
-      <GameDisplay question = {question}/>
-      <button onClick={getQuestion}>Get Question</button>
+       {!multiQuest && <div> <GameDisplay question = {question}/>
+      <button onClick={getQuestion}>Get Question</button></div>}
+     
 
-      <MultiQuestionDisplay question = {multiQuest}/>
-      <button onClick={getMultiQuest}>Get 10 Questions</button>
+
+      <MultiQuestionDisplay className = "game" question = {multiQuest}/>
+      {!multiQuest &&  <button onClick={getMultiQuest}>Get 10 Questions</button>}
+     
 
      
     </div>

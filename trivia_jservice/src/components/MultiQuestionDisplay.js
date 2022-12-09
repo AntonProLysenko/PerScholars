@@ -1,3 +1,4 @@
+import AnswerDisplay from "./AnswerDisplay"
 import Score from './Score';
 
 export default function MultiQuestionDisplay({question}){
@@ -11,20 +12,21 @@ export default function MultiQuestionDisplay({question}){
             const {question , answer, value} = result
 
             return(
-                <>
+                
                   
-                    <div key = {idx}>
+                    <div className="question" key = {idx}>
                      
                     <ul>
                      <li>
+
                         <p><span className="title">Question:</span>{question} </p>
-                        <p><span className="title">Answer:</span>{answer} </p>
                         <p><span className="title">Value:</span>{value} </p>
+                        <AnswerDisplay answer = {answer}/>
                      </li>
                      <br/>
                     </ul>
                 </div>
-                </>
+                
                
             )
         })

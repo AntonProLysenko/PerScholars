@@ -1,0 +1,17 @@
+What is a Single Page Application?
+SPA is a web page that loads only one and them uploads the body using Js APIs
+
+What is REACT?
+It is a JS library created by Facebook
+
+What is JSX?
+It is a js extension used for react view engine, it tells that we are using js for producing react elements 
+
+What is Babel?
+It is a compiler used for compiling new Js language to old one that allows to use new Js in old browsers
+
+What is Webpack?
+Is a tool that takes the code and makes it usable in the browser
+
+What is Create React App?
+ It is command that set ups the  environment  for developing react app
